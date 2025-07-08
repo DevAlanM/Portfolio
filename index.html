@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - DevAlanM</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">DevAlanM</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero fade-in" id="sobre">
+      <div class="hero-content">
+        <div class="image-container">
+          <img src="assets/logo-site.png" alt="DevAlanM" class="profile-img" />
+        </div>
+        <div>
+          <h1>Hi, I am Alan Martins</h1>
+          <p>Sou desenvolvedor FullStack, crio soluções modernas com tecnologia e paixão por código.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section fade-in" id="projetos">
+      <h2>💻 Meus Projetos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Projeto 1</h3>
+          <p>Descrição breve sobre o projeto ou tecnologia usada.</p>
+          <a href="https://github.com/DevAlanM/projeto1" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+        </div>
+        <div class="project-card">
+          <h3>Projeto 2</h3>
+          <p>Outro projeto incrível com React, Node ou JS puro.</p>
+          <a href="https://github.com/DevAlanM/projeto2" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+        </div>
+        <div class="project-card">
+          <h3>Projeto 3</h3>
+          <p>Solução criativa com HTML, CSS e Flexbox/Grid.</p>
+          <a href="https://github.com/DevAlanM/projeto3" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section fade-in" id="localizacao">
+      <h2>📍 Localização</h2>
+        <div class="grid">
+            <div class="card">🌎 Brasil - CE</div>
+            <div class="card">🏠 Fortaleza</div>
+        </div>      
+        <div id="map" class="map-dark"></div>
+    </section>
+
+    <section class="grid-section fade-in" id="contato">
+      <h2>📞 Contato</h2>
+      <div class="grid">
+        <div class="card">📧 alanmartins789@gmail.com</div>
+        <div class="card">📱 (85) 999123-5783</div>
+      </div>
+    </section>
+
+    <section class="grid-section fade-in" id="fale-comigo">
+      <h2>✉️ Fale Comigo</h2>
+      <form action="https://formsubmit.co/f/12345678abcd1234" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://DevAlanM.github.io/portfolio/thanksEmail.html" />
+        
+        <button type="submit">Enviar</button>
+     </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 DevAlanM. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
